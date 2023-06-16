@@ -25,16 +25,16 @@ function listarNumerosPrimos() {
   let primos = [];
 
   for (let numero = 2; numero <= 1000; numero++) {
-    let ehPrimo = true;
+    let Primo = true;
 
     for (let i = 2; i < numero; i++) {
       if (numero % i === 0) {
-        ehPrimo = false;
+        Primo = false;
         break;
       }
     }
 
-    if (ehPrimo) {
+    if (Primo) {
       primos.push(numero);
     }
   }
